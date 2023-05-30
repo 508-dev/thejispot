@@ -4,3 +4,9 @@
 
 layout: home
 ---
+
+## Best Chicken Biscuits in Taiwan
+
+The Ji Spot is a restaurant in Taipei serving the best American southern-style chicken biscuits in the country.
+
+You finally found it.
