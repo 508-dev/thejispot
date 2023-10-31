@@ -2,10 +2,10 @@
 :root {
     --color-buff: #ECBF83;
     --color-red: #9A0002;
-    --color-linen: #FFF5E9;
+    --color-linen: #FFF7ED;
     --color-blue: #6689A1;
     --color-cafe: #42280F;
-    --bg-primary: #FFF5E9;
+    --bg-primary: #FFF7ED;
     --color-lightGrey: #f0f8f9;
     --grid-maxWidth: 120rem;
     --grid-gutter: 2rem;
@@ -85,4 +85,8 @@ main {
     align-items: center;
     justify-content: center;
 
+}
+
+.menu {
+    width: 98vw;
 }
