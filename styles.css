@@ -128,7 +128,26 @@ main {
 dd {
     margin-inline-start: 40px;
 }
+.menu h1 {
+    font-size: 2em;
+    margin-bottom: 0px;
+    margin-top: 0px;
 
+}
+
+.menu nav {
+    font-size: 1.5em;
+}
+
+/* mobile */
+@media only screen and (max-width: 450px) {
+    .menu h1 {
+        font-size: 1.5em;
+    }
+    .menu nav {
+        font-size: 1.2em;
+    }
+}
 
 
 /* very small mobile */
