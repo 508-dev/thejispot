@@ -119,3 +119,28 @@ main {
 .logo {
     width: 7em;
 }
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+dd {
+    margin-inline-start: 40px;
+}
+
+
+
+/* very small mobile */
+@media only screen and (max-width: 394px) {
+    dd {
+        margin-inline-start: 10px;
+    }
+}
+
+/* very very small mobile */
+@media only screen and (max-width: 361px) {
+    dd {
+        margin-inline-start: 3px;
+    }
+}
