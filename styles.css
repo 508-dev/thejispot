@@ -61,6 +61,7 @@ ul li {
 
 body {
     background-color: var(--bg-primary);
+    width: 80vw;
     line-height: 1.6;
     color: var(--font-color);
     font-family: "Segoe UI", "Helvetica Neue", sans-serif; /*fallback*/
@@ -69,7 +70,16 @@ body {
     max-width: 72rem;
     font-size: 1.0rem;
 }
-
+.test {
+    display:block;
+    width:300%;
+    height: 65px;
+    background-image:url('4.png');
+    position:absolute;
+    margin-top:0px;
+    left:0px;
+    z-index:10;
+}
 header {
     display: flex;
     flex-flow: column;
