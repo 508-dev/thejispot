@@ -1,7 +1,7 @@
 
 :root {
-    --color-buff: #ECBF83;
-    --color-red: #9A0002;
+    --color-buff: #ecbf83;
+    --color-red: #9a1d21;
     --color-linen: #FFF7ED;
     --color-blue: #6689A1;
     --color-cafe: #42280F;
@@ -49,25 +49,89 @@ html {
     background: var(--color-lightGrey);
 }
 a {
-    color: var(--color-red);
+    text-decoration: none;
+    color: white;
 }
 a:visited {
-    color: var(--color-cafe);
+    color: white;
+}
+
+ul {
+    width: 100%;
+    margin-inline-start: 0px;
+    padding-inline-start: 0px;
+    padding: 0px 16px;
 }
 ul li {
-    text-decoration: none;
     list-style-type: none;
+    background-color: var(--color-red);
+    transition: all .25s ease-out;
+    hyphens: auto;
+    white-space: normal;
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin-bottom: 12px;
+    height: 58px;
+    padding: 0px 6px;
+    color: white;
+    bordre: 2px solid var(--color-buff);
+}
+ul li a {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+ul li a:hover {
+    border: 0px;
+}
+
+.secret {
+    width: 46px;
+}
+
+.secret:hover {
+    border: 0px !important;
+}
+
+.link-icon img {
+    width: 46px;
+}
+
+
+.link-icon {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul li:hover {
+    background-color: var(--color-buff);
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    border: 2px solid var(--color-red);
+    color: var(--color-red) !important;
+}
+
+ul li:hover div {
+    color: var(--color-red)
 }
 
 body {
-    background-color: var(--bg-primary);
+    background-color: var(--color-buff);
     line-height: 1.6;
     color: var(--font-color);
     font-family: "Segoe UI", "Helvetica Neue", sans-serif; /*fallback*/
     font-family: var(--font-family-sans);
     padding: 0;
-    max-width: 72rem;
     font-size: 1.0rem;
+    width: 100%;
+    max-width: 680px;
+    margin-top: 69px;
 }
 
 header {
@@ -75,11 +139,15 @@ header {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    padding: 0px 8px;
+    text-align: center;
+
 }
 header h1 {
     margin-block-start: 0;
     margin-block-end: 0;
-
     font-size: 3rem;
     margin-bottom: 6px;
     margin-top: 6px;
@@ -89,9 +157,10 @@ header h1 {
 header h2 {
     margin-block-start: 0;
     margin-block-end: 0;
-
     margin-bottom: 3px;
     margin-top: 6px;
+    font-size: 1.1rem;
+    text-shadow: 0px 0px 3px black;
 }
 header h3 {
     margin-block-start: 0;
@@ -109,6 +178,7 @@ main {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 
 }
 
@@ -118,6 +188,13 @@ main {
 
 .logo {
     width: 7em;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    display: block;
+    object-fit: contain;
+    object-position: initial;
+    filter: none;
 }
 
 .hours-item {
